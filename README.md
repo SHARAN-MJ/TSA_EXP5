@@ -83,26 +83,26 @@ plt.show()
 
 #### FIRST FIVE ROWS:
 
-![image](https://github.com/user-attachments/assets/11e7f101-6480-4308-b49e-5a481cb6aeb0)
+![Screenshot 2024-09-25 154432](https://github.com/user-attachments/assets/47e821c6-eafe-41e5-a238-ec34f739c9a3)
 
 
 #### SEASONAL PLOT REPRESENTATION :
 
-![image](https://github.com/user-attachments/assets/174f5dea-807f-43c0-bddd-4182cd483185)
+![Screenshot 2024-09-25 154451](https://github.com/user-attachments/assets/70bef172-3a4c-4c5b-bb48-117843a9f25c)
 
 
 
 #### TREND PLOT REPRESENTATION :
+![Screenshot 2024-09-25 154508](https://github.com/user-attachments/assets/7d317b2b-1d0e-43f1-b50d-82abee82161e)
 
-![Untitled](https://github.com/user-attachments/assets/462ed5eb-7c65-4370-923b-a880b8bc462e)
 
 #### PLOTTING THE DATA:
+![Screenshot 2024-09-25 154523](https://github.com/user-attachments/assets/4ffd7ebb-4b83-46f1-a5a8-95343342a105)
 
-![Untitled-1](https://github.com/user-attachments/assets/9ccba9c3-11b6-42a7-9941-40390bd56be1)
 
 #### OVERAL REPRESENTATION:
 
-![Untitled](https://github.com/user-attachments/assets/f0bd5ea2-d10c-40a4-b472-e3124280fab5)
+![Screenshot 2024-09-25 154532](https://github.com/user-attachments/assets/31277e0e-b983-4735-b677-8ba9e2913405)
 
 
 ### RESULT:
