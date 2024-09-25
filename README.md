@@ -6,7 +6,7 @@
 
 
 ### AIM:
-To Illustrates how to perform time series analysis and decomposition on the monthly average of Onion Price data.
+To Illustrates how to perform time series analysis and decomposition on the monthly average of amazon stock Price data.
 
 ### ALGORITHM:
 
@@ -21,22 +21,31 @@ To Illustrates how to perform time series analysis and decomposition on the mont
 
 ```py
 
-
 import pandas as pd
 from statsmodels.tsa.seasonal import seasonal_decompose
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('/content/OnionTimeSeries - Sheet1.csv')
+from google.colab import drive
+drive.mount('/content/drive')
+
+# Make sure the path below reflects the actual location of your file in your Google Drive
+data = pd.read_csv('/content/drive/MyDrive/time series/AMZN.csv') 
 
 print("First 5 Rows of the dataset:")
-print(df.head())
 
-df['Date'] = pd.to_datetime(df['Date'], format='%m/%d/%Y') 
-df.set_index('Date', inplace=True)
+# You were using a variable df which was not defined. Changed to data
+print(data.head())
 
-df['Min'] = df['Min'].fillna(method='ffill')
+# Check the column names and correct 'Min' if necessary
+print(data.columns) # Print the columns to verify the correct name
 
-decomposition = seasonal_decompose(df['Min'], model='additive', period=7)
+data['Date'] = pd.to_datetime(data['Date'], format='%Y-%m-%d') # Changed the format to %Y-%m-%d
+data.set_index('Date', inplace=True)
+
+# Access the correct column name for 'Min' (e.g., data['min'], data['Minimum'], etc.)
+data['Low'] = data['Low'].fillna(method='ffill')
+
+decomposition = seasonal_decompose(data['Low'], model='additive', period=7)
 
 
 plt.figure(figsize=(10, 4))
@@ -67,7 +76,6 @@ plt.title('Residual')
 plt.ylabel('Residual')
 plt.savefig('residual_plot.png')
 plt.show()
-
 ```
 
 
