@@ -106,4 +106,4 @@ plt.show()
 
 
 ### RESULT:
-Thus we have created the python code for the time series analysis and decomposition of the Onion Price data.
+Thus we have created the python code for the time series analysis and decomposition of the amazon stock Price data.
